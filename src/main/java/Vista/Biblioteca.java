@@ -239,7 +239,7 @@ public class Biblioteca extends javax.swing.JInternalFrame {
     String autor = TxtAutor.getText();
     String ISBN = TxtISBN.getText();
     int paginas = Integer.parseInt(TxtPag.getText());
-    String edicion = TxtEdicion.getText();
+    int edicion = Integer.parseInt(TxtEdicion.getText());
     String editorial = TxtEditorial.getText();
     String lugar = TxtLugar.getText();
     String fechaEdicion = TxtFechaE.getText();
@@ -252,13 +252,13 @@ public class Biblioteca extends javax.swing.JInternalFrame {
          
         Libro nuevoLibro = new Libro();
     nuevoLibro.setTitulo(titulo);
-   // nuevoLibro.setAutor(autor);
+    nuevoLibro.setAutor(autor);
     nuevoLibro.setISBN(ISBN);
     nuevoLibro.setPaginas(paginas);
-   // nuevoLibro.setEdicion(edicion);
+    nuevoLibro.setEdicion(edicion);
     nuevoLibro.setEditorial(editorial);
-    //nuevoLibro.setLugar(lugar);
-    //nuevoLibro.setFechaEdicion(fechaEdicion);
+    nuevoLibro.setLugar(lugar);
+    nuevoLibro.setFechaEdicion(fechaEdicion);
     }//GEN-LAST:event_BtnAgregarActionPerformed
 
     private void TxtISBNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtISBNActionPerformed

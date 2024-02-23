@@ -4,6 +4,8 @@
  */
 package DIU;
 
+import Vista.Biblioteca;
+
 /**
  *
  * @author DELL
@@ -46,6 +48,11 @@ public class Menu extends javax.swing.JInternalFrame {
         );
 
         biblioteca.setText("Bilbioteca");
+        biblioteca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bibliotecaActionPerformed(evt);
+            }
+        });
         jMenuBar1.add(biblioteca);
 
         setJMenuBar(jMenuBar1);
@@ -63,6 +70,13 @@ public class Menu extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bibliotecaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bibliotecaActionPerformed
+        Biblioteca f = new Biblioteca ();
+        escritorio.add(f);
+        f.show();
+        
+    }//GEN-LAST:event_bibliotecaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

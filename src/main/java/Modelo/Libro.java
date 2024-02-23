@@ -12,27 +12,25 @@ import java.util.Date;
  */
 public class Libro {
      private String titulo;
-    private Persona autor;
+    private String autor;
     private String ISBN;
     private int paginas;
     private int edicion;
     private String editorial;
-    private String lugarCiudad;
-    private String lugarPais;
-    private Date fechaEdicion;
+    private String lugar;
+    private String fechaEdicion;
 
     public Libro() {
     }
 
-    public Libro(String titulo, Persona autor, String ISBN, int paginas, int edicion, String editorial, String lugarCiudad, String lugarPais, Date fechaEdicion) {
+    public Libro(String titulo, String autor, String ISBN, int paginas, int edicion, String editorial, String lugar, String fechaEdicion) {
         this.titulo = titulo;
         this.autor = autor;
         this.ISBN = ISBN;
         this.paginas = paginas;
         this.edicion = edicion;
         this.editorial = editorial;
-        this.lugarCiudad = lugarCiudad;
-        this.lugarPais = lugarPais;
+        this.lugar = lugar;
         this.fechaEdicion = fechaEdicion;
     }
 
@@ -44,11 +42,11 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public Persona getAutor() {
+    public String getAutor() {
         return autor;
     }
 
-    public void setAutor(Persona autor) {
+    public void setAutor(String autor) {
         this.autor = autor;
     }
 
@@ -84,29 +82,21 @@ public class Libro {
         this.editorial = editorial;
     }
 
-    public String getLugarCiudad() {
-        return lugarCiudad;
+    public String getLugar() {
+        return lugar;
     }
 
-    public void setLugarCiudad(String lugarCiudad) {
-        this.lugarCiudad = lugarCiudad;
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
     }
 
-    public String getLugarPais() {
-        return lugarPais;
-    }
-
-    public void setLugarPais(String lugarPais) {
-        this.lugarPais = lugarPais;
-    }
-
-    public Date getFechaEdicion() {
+    public String getFechaEdicion() {
         return fechaEdicion;
     }
 
-    public void setFechaEdicion(Date fechaEdicion) {
+    public void setFechaEdicion(String fechaEdicion) {
         this.fechaEdicion = fechaEdicion;
     }
-    
+
     
 }
